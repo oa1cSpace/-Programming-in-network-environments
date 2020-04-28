@@ -7,6 +7,7 @@
 
     <script>
     function passvalues() {
+
       var fname = document.getElementById("fname").value;
       localStorage.setItem("fname", fname);
 
@@ -17,14 +18,17 @@
       localStorage.setItem('course', course);
 
       var gender = document.getElementsByName('gender');
-        for (var i = 0; i < gender.length; i++) {
-          localStorage.setItem('gender', gender[i].value)
-          break;
+        for (var i=0; i<gender.length; i++) {
+            if ( gender[i].checked ) {
+              localStorage.setItem('gender', gender[i].value);
+                break;
+            }
+
         }
 
       var major = document.getElementsByName('major');
         for (var i = 0; i < major.length; i++) {
-          localStorage.setItem('major', major[i].value)
+          localStorage.setItem('major', major[i].value);
           break;
         }
 
@@ -56,9 +60,10 @@
   <input type="text" id="course"/><br>
 
 
-<p><input type="radio" name="gender" value="Male">Male</p>
-<p><input type="radio" name="gender" value="Female">Female</p>
+<input type="radio" name="gender" value="Male"/>Male
+<input type="radio" name="gender" value="Female"/>Female
 
+<br>
   <label for="majoor">Major:</label><br>
 
   <select class="majoor" name="major">
