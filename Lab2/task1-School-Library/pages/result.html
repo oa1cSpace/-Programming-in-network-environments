@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/Lab2/task1-School-Library/css/style.css">
+    <title>Result</title>
+  </head>
+  <body>
+
+
+<header>
+  <h1>RESULT:</h1><br>
+  <span id="fname"></span><br>
+  <span id="lname"></span><br>
+  <span id="course"></span><br>
+  <span id="gender"></span><br>
+
+  <span id="major"></span><br>
+
+  <button type="button" name="button"><a href="/Lab2/task1-School-Library/index.html">Main page</a></button>
+</header>
+
+
+
+
+<footer>
+  <p>School Library, Copyright &copy; 2020</p>
+</footer>
+
+<script>
+  document.getElementById("fname").innerHTML=localStorage.getItem("fname");
+  document.getElementById('lname').innerHTML=localStorage.getItem('lname');
+  document.getElementById('course').innerHTML=localStorage.getItem('course');
+  document.getElementById('gender').innerHTML=localStorage.getItem('gender');
+
+  document.getElementById('major').innerHTML=localStorage.getItem('major');
+
+</script>
+
+  </body>
+</html>

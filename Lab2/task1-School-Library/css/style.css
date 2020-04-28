@@ -1,0 +1,30 @@
+body{
+
+
+}
+
+header{
+  text-align: center;
+
+}
+
+
+.registration-form{
+    text-align: center;
+}
+
+form{
+    text-align: center;
+}
+
+
+
+
+
+footer{
+  padding: 8px;
+  margin-top:50px;
+  color: #ffffff;
+  background-color: #1F5BAF;
+  text-align: center;
+}

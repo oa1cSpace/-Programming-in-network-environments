@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="Lab2/task1-School-Library/pages/result.htmlutf-8">
+    <title>School Library</title>
+    <link rel="stylesheet" href="/Lab2/task1-School-Library/css/style.css">
+
+    <script>
+    function passvalues() {
+      var fname = document.getElementById("fname").value;
+      localStorage.setItem("fname", fname);
+
+      var lname = document.getElementById('lname').value;
+      localStorage.setItem('lname', lname);
+
+      var course = document.getElementById('course').value;
+      localStorage.setItem('course', course);
+
+      var gender = document.getElementsByName('gender');
+        for (var i = 0; i < gender.length; i++) {
+          localStorage.setItem('gender', gender[i].value)
+          break;
+        }
+
+      var major = document.getElementsByName('major');
+        for (var i = 0; i < major.length; i++) {
+          localStorage.setItem('major', major[i].value)
+          break;
+        }
+
+      return false;
+    }
+    </script>
+  </head>
+  <body>
+
+<header>
+  <div class="container">
+      School Library
+  </div>
+</header>
+
+
+  <form  action="/Lab2/task1-School-Library/pages/result.html" >
+<br>
+
+  <h3>Registration</h3>
+
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname"  /><br>
+
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname"/><br>
+
+  <label for="course">Course:</label><br>
+  <input type="text" id="course"/><br>
+
+
+<p><input type="radio" name="gender" value="Male">Male</p>
+<p><input type="radio" name="gender" value="Female">Female</p>
+
+  <label for="majoor">Major:</label><br>
+
+  <select class="majoor" name="major">
+    <option value="Math">Math</option>
+    <option value="Biolagy">Biolagy</option>
+    <option value="Chimestry">Chimestry</option>
+    <option value="Literature">Literature</option>
+    <option value="Engineering">Engineering</option>
+  </select><br>
+
+<br>
+
+      <input type="submit" id="submit"  value="Submit" onclick="passvalues();"/>
+
+    </form>
+
+
+
+    <footer>
+        <p>School Library, Copyright &copy; 2020</p>
+    </footer>
+
+  </body>
+</html>
