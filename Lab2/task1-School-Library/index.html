@@ -4,37 +4,7 @@
     <meta charset="Lab2/task1-School-Library/pages/result.htmlutf-8">
     <title>School Library</title>
     <link rel="stylesheet" href="/Lab2/task1-School-Library/css/style.css">
-
-    <script>
-    function passvalues() {
-
-      var fname = document.getElementById("fname").value;
-      localStorage.setItem("fname", fname);
-
-      var lname = document.getElementById('lname').value;
-      localStorage.setItem('lname', lname);
-
-      var course = document.getElementById('course').value;
-      localStorage.setItem('course', course);
-
-      var gender = document.getElementsByName('gender');
-        for (var i=0; i<gender.length; i++) {
-            if ( gender[i].checked ) {
-              localStorage.setItem('gender', gender[i].value);
-                break;
-            }
-
-        }
-
-      var major = document.getElementsByName('major');
-        for (var i = 0; i < major.length; i++) {
-          localStorage.setItem('major', major[i].value);
-          break;
-        }
-
-      return false;
-    }
-    </script>
+    <script src="/Lab2/task1-School-Library/scripts/main.js" defer></script>
   </head>
   <body>
 
@@ -45,13 +15,13 @@
 </header>
 
 
-  <form  action="/Lab2/task1-School-Library/pages/result.html" >
+  <form>
 <br>
 
   <h3>Registration</h3>
 
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname"  /><br>
+  <label for="fname" >First name:</label><br>
+  <input type="text" id="fname" name="fname"  /><br>
 
   <label for="lname">Last name:</label><br>
   <input type="text" id="lname"/><br>
@@ -60,23 +30,25 @@
   <input type="text" id="course"/><br>
 
 
-<input type="radio" name="gender" value="Male"/>Male
+<input type="radio" name="gender" value="Male" checked/>Male
 <input type="radio" name="gender" value="Female"/>Female
 
 <br>
   <label for="majoor">Major:</label><br>
 
   <select class="majoor" name="major">
+    <option value=""></option>
     <option value="Math">Math</option>
     <option value="Biolagy">Biolagy</option>
     <option value="Chimestry">Chimestry</option>
     <option value="Literature">Literature</option>
     <option value="Engineering">Engineering</option>
+    <option value="Other">Other</option>
   </select><br>
 
 <br>
 
-      <input type="submit" id="submit"  value="Submit" onclick="passvalues();"/>
+      <input type="button" id="submit"  value="Submit" onclick="passvalues();"/>
 
     </form>
 
