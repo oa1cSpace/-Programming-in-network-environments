@@ -1,68 +1,59 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
-
-
-
-background: url(/Lab2/task1-School-Library/images/library.jpg) no-repeat center center fixed;
+  background: url(/Lab2/task1-School-Library/images/library.jpg) no-repeat center center fixed;
   background-size: cover;
   height: 100%;
   overflow: visible;
-
-
 }
 
 header{
-
   background-color: rgba(00,00,00,0.7);
+  border-radius: 8px;
   color: #ffffff;
   padding-top: 10px;
   min-height: 70px;
-
   text-align: center;
   font-size: 70px;
-
 }
-
 
 .registration-form{
   color: #ffffff;
     text-align: center;
-
 }
 
 form{
   border-top:  #ffffff 2px solid;
+  border-radius: 8px;
   font-size: 22px;
   color: #ffffff;
   max-width: 350px;
-
   margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
   background: rgba(00,00,00, 0.7);
   text-align: center;
-
-
-
-
-
-
 }
 
-
-
-
+.button{
+  background-color: #C0C0C0;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
 footer{
-
-  background-color: rgba(00,00,00,0.3);
-
-
-
-
-  margin-top: 500px;
+  margin-top: 210px;
+  background-color: rgba(00,00,00,0.8);
+  border-radius: 8px;
   color: #ffffff;
   text-align: center;
 }

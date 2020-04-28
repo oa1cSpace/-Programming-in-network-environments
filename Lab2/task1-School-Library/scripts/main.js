@@ -1,4 +1,3 @@
-
 function passvalues() {
 
 var fail = false;
@@ -18,7 +17,6 @@ var fail = false;
           localStorage.setItem('gender', gender[i].value);
             break;
         }
-
     }
 
   let major = document.getElementsByName('major');
@@ -34,14 +32,14 @@ var fail = false;
       fail = 'Incorrect first name!';
       alert(fail);
     } else if (namePattern.test(fname) == false) {
-      fail = 'Incorrect first name!';
-      alert(fail);
+        fail = 'Incorrect first name!';
+        alert(fail);
     } else if (lname == '' | ' ') {
-      fail = 'Incorrect last name';
-      alert(fail);
+        fail = 'Incorrect last name';
+        alert(fail);
     } else if (namePattern.test(lname) == false) {
-      fail = 'Incorrect last name';
-      alert(fail);
+        fail = 'Incorrect last name';
+        alert(fail);
     } else if (course == '' | ' ') {
         fail = 'Incorrect course';
         alert(fail);
@@ -52,8 +50,6 @@ var fail = false;
 
   return false;
 }
-
-
 
 document.getElementById("fname").innerHTML=localStorage.getItem("fname");
 document.getElementById('lname').innerHTML=localStorage.getItem('lname');
