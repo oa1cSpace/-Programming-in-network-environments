@@ -4,10 +4,17 @@ html, body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 95%;
   height: 100%;
   padding-left: 12px;
   padding-right: 12px;
+}
+
+.pic{
+  height: auto;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header {
@@ -63,7 +70,12 @@ canvas {
   width: 100%;
 }
 
+iframe {
+  height: 900px;
+  width: 100%;
+}
+
 video {
   height: auto;
-  width: 1200px;
+  width: 100%;
 }

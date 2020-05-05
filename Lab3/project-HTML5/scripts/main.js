@@ -18,9 +18,9 @@ context.stroke();
 context.beginPath();
 let eyeX = centerX - eyeXOffset;
 let eyeY = centerY - eyeXOffset;
-context.arc(eyeX, eyeY, eyeRadius, 0, 2 * Math.PI * 0.5, false);
+context.arc(eyeX, eyeY, eyeRadius, 0, 2 * Math.PI , false);
 eyeX = centerX + eyeXOffset;
-context.arc(eyeX, eyeY, eyeRadius, 0, 2 * Math.PI * 0.5, false);
+context.arc(eyeX, eyeY, eyeRadius, 0, 2 * Math.PI , false);
 context.fillStyle = 'black';
 context.fill();
 // малювання рота
