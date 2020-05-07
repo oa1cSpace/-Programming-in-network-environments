@@ -73,7 +73,9 @@ canvas {
 iframe {
   height: 900px;
   width: 100%;
+  
 }
+.border0 {border:0;}
 
 video {
   height: auto;

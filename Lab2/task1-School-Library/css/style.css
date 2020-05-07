@@ -9,7 +9,6 @@ body{
 
 header{
   background-color: rgba(00,00,00,0.7);
-  border-radius: 8px;
   color: #ffffff;
   padding-top: 10px;
   min-height: 70px;
@@ -19,11 +18,12 @@ header{
 
 .registration-form{
   color: #ffffff;
-    text-align: center;
+  text-align: center;
 }
 
 form{
   border-top:  #ffffff 2px solid;
+
   border-radius: 8px;
   font-size: 22px;
   color: #ffffff;
@@ -51,9 +51,8 @@ form{
 }
 
 footer{
-  margin-top: 210px;
+  margin-top: 300px;
   background-color: rgba(00,00,00,0.8);
-  border-radius: 8px;
   color: #ffffff;
   text-align: center;
 }

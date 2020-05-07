@@ -81,7 +81,7 @@ function initMap() {
     var pos = {lat: 41.898755, lng: 12.477109};
   var opt = {
     center: pos,
-    zoom: 17
+    zoom: 14
   }
   var myMap = new google.maps.Map(document.getElementById('map'), opt);
 

@@ -22,6 +22,7 @@ var fail = false;
   let major = document.getElementsByName('major');
     for (var i = 0; i < major.length; i++) {
       localStorage.setItem('major', major[i].value);
+      console.log(major[i].value);
       break;
     }
 
@@ -40,13 +41,18 @@ var fail = false;
     } else if (namePattern.test(lname) == false) {
         fail = 'Incorrect last name';
         alert(fail);
-    } else if (course == '' | ' ') {
+    } else if (course == "" | " ") {
         fail = 'Incorrect course';
         alert(fail);
     } else if (coursePattern.test(course) == false) {
         fail = 'Incorrect course';
         alert(fail);
-    } else window.location = "/Lab2/task1-School-Library/pages/result.html";
+    } else if (major == '') {
+      fail = 'Incorrect major';
+        alert(fail);
+    }
+
+    else window.location = "/Lab2/task1-School-Library/pages/result.html";
 
   return false;
 }
